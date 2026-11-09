@@ -1,0 +1,35 @@
+name: Arquivar SETI no Wayback Machine
+
+on:
+  schedule:
+    - cron: '23 6 * * *'   # todo dia às 03:23 de Brasília (06:23 UTC)
+  workflow_dispatch:        # botão "Run workflow" para rodar na hora
+
+permissions:
+  contents: write           # para gravar o registro em status/
+
+concurrency:
+  group: arquivar-seti
+  cancel-in-progress: false
+
+jobs:
+  arquivar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enviar o site para o Wayback Machine
+        env:
+          IA_ACCESS: ${{ secrets.IA_ACCESS }}
+          IA_SECRET: ${{ secrets.IA_SECRET }}
+        run: python3 arquivar.py
+
+      - name: Gravar registro da execução
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add status/ || true
+          git commit -m "registro $(date -u +%F)" || echo "nada a registrar"
+          git push || echo "push falhou"
