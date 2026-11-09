@@ -1,0 +1,4 @@
+# URLs extras que não aparecem no sitemap (uma por linha).
+# Linhas começando com # são ignoradas.
+# Exemplo:
+# https://www.seti.pr.gov.br/Pagina/Fundo-Parana
