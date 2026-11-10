@@ -203,7 +203,10 @@ def spn_save(url, outlinks, skip_hours):
             time.sleep(wait)
             continue
         if ext == "error:too-many-daily-captures":
-            raise StopRun("limite diário de capturas do Internet Archive atingido")
+            # limite por URL: a página já foi capturada muitas vezes hoje
+            return "pulado", "limite diário desta URL"
+        if ext in ("error:user-daily-limit", "error:daily-limit"):
+            raise StopRun(f"limite diário da conta no Internet Archive ({msg[:100]})")
         if j.get("job_id"):
             return "enviado", j["job_id"]
         if "same snapshot" in msg.lower() or "already" in msg.lower():
@@ -253,6 +256,7 @@ def main():
     errors = []
     stopped = None
     done = 0
+    daily_hits = 0
     for url, outlinks, skip_hours in queue:
         if elapsed_min() > MAX_MINUTES:
             stopped = f"tempo máximo ({MAX_MINUTES:g} min) atingido"
@@ -265,9 +269,16 @@ def main():
             break
         counts[status] += 1
         done += 1
+        if info == "limite diário desta URL":
+            daily_hits += 1
+            if daily_hits >= 10:
+                stopped = "10 seguidas com limite diário; provável limite da conta, retomo amanhã"
+                break
+        else:
+            daily_hits = 0
         if status == "erro":
             errors.append({"url": url, "erro": info})
-        log(f"{done}/{len(queue)} {status:8} {url}" + (" (+links)" if outlinks else ""))
+        log(f"{done}/{len(queue)} {status:8} {url}" + (f" [{info}]" if status != "enviado" else "") + (" (+links)" if outlinks else ""))
         time.sleep(max(0.0, INTERVAL - (time.monotonic() - t0)))
 
     resumo = {
