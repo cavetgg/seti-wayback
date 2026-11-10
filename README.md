@@ -1,12 +1,17 @@
 # Arquivamento diário da SETI no Wayback Machine
 
-Todo dia, às 03:23 (Brasília), o GitHub roda o `arquivar.py`, que:
+Todo dia, às 03:23 (Brasília), o GitHub roda o `arquivar.py`, que lê o `sitemap.xml` da SETI e salva no Wayback Machine:
 
-1. Lê o `sitemap.xml` da SETI (hoje são 7 páginas de sitemap, com todas as notícias e páginas do site).
-2. Envia primeiro a home e as páginas alteradas nos últimos 3 dias, pedindo para salvar também os links delas (PDFs de editais, anexos etc.).
-3. Envia todo o resto do site, em ordem aleatória.
-4. Pula o que já foi salvo nas últimas 20 horas, para não duplicar.
-5. Grava um registro em `status/ultima_execucao.json` e `status/historico.csv`.
+1. **Home**: todo dia, junto com os links dela (PDFs, anexos).
+2. **Notícias**: na primeira execução, as 50 mais recentes. Depois, só as novas ou atualizadas desde a última execução, também com os links.
+3. **Páginas principais** (tudo que não é notícia, ~175): as alteradas todo dia; as demais em rodízio, cada uma uma vez por semana (~25 por dia).
+
+O acervo antigo de notícias fica de fora de propósito, para manter a rotina leve.
+
+Arquivos de controle em `status/`:
+- `noticias_vistas.txt`: notícias já tratadas (apague para recomeçar do zero).
+- `paginas_principais.json`: data em que cada página principal foi enviada.
+- `ultima_execucao.json` e `execucoes.csv`: resumo de cada execução.
 
 ## Configuração (uma vez só, uns 10 minutos)
 
@@ -33,11 +38,10 @@ Variáveis de ambiente que dá para colocar no passo `env:` do workflow:
 | Variável | Padrão | O que faz |
 |---|---|---|
 | `SKIP_IF_ARCHIVED_HOURS` | 20 | Não reenvia página salva há menos de X horas |
-| `OUTLINKS_DAYS` | 3 | Páginas alteradas nesse período também salvam os links (PDFs) |
+| `REFRESH_DAYS` | 7 | Ciclo do rodízio das páginas principais |
+| `FIRST_NEWS` | 50 | Notícias salvas na primeira execução |
 | `INTERVAL_SECONDS` | 5 | Intervalo entre envios (o limite do Archive é ~15 por minuto) |
 | `MAX_MINUTES` | 320 | Tempo máximo por execução |
-
-Se o histórico mostrar muitos erros ou o aviso de limite diário, aumente `SKIP_IF_ARCHIVED_HOURS` (por exemplo para 168, uma semana): as novidades continuam sendo salvas todo dia e o acervo antigo passa a ser revisitado semanalmente.
 
 Para incluir páginas que não estão no sitemap, coloque uma URL por linha em `urls_extras.txt`.
 
