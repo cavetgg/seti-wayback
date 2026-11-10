@@ -4,12 +4,14 @@ Arquiva o site completo da SETI/PR no Wayback Machine (Internet Archive).
 
 Fluxo:
   1. Lê o sitemap.xml do site (índice + todas as páginas filhas).
-  2. Monta a fila: home e páginas alteradas recentemente primeiro
-     (essas também capturam os links que contêm, como PDFs de editais),
-     depois todo o resto em ordem aleatória.
-  3. Envia cada URL para o Save Page Now 2 (SPN2), respeitando o limite
-     de requisições, e pula o que já foi arquivado nas últimas horas.
-  4. Grava um registro em status/ para conferência.
+  2. Monta a fila do dia:
+     - home (todo dia, com os links dela, como PDFs);
+     - notícias novas ou atualizadas desde a última execução (com links);
+       na primeira execução, só as FIRST_NEWS mais recentes;
+     - páginas principais (tudo que não é notícia): as alteradas todo dia,
+       as demais uma vez a cada REFRESH_DAYS dias.
+  3. Envia cada URL para o Save Page Now 2 (SPN2), respeitando o limite.
+  4. Grava em status/ o registro da execução e a lista de notícias já vistas.
 
 Só usa a biblioteca padrão do Python.
 """
@@ -31,17 +33,13 @@ SPN_ENDPOINT = os.environ.get("SPN_ENDPOINT", "https://web.archive.org/save")
 IA_ACCESS = os.environ.get("IA_ACCESS", "").strip()
 IA_SECRET = os.environ.get("IA_SECRET", "").strip()
 
-# Home e páginas novas: não reenvia se já arquivada há menos de X horas
+# Home, notícias novas e páginas alteradas: não reenvia se salva há menos de X horas
 SKIP_IF_ARCHIVED_HOURS = float(os.environ.get("SKIP_IF_ARCHIVED_HOURS", "20"))
-# Acervo antigo: só recaptura se a última captura tiver mais de N dias
-REFRESH_DAYS = float(os.environ.get("REFRESH_DAYS", "30"))
-CDX_URL = os.environ.get(
-    "CDX_URL",
-    "https://web.archive.org/cdx/search/cdx?url=seti.pr.gov.br/*&fl=original"
-    "&collapse=urlkey&filter=statuscode:200&filter=mimetype:text/html",
-)
-# Páginas alteradas nos últimos N dias também salvam os links delas (PDFs etc.)
-OUTLINKS_DAYS = float(os.environ.get("OUTLINKS_DAYS", "3"))
+# Páginas principais sem mudança: recaptura a cada N dias
+REFRESH_DAYS = float(os.environ.get("REFRESH_DAYS", "7"))
+# Na primeira execução, quantas notícias recentes salvar
+FIRST_NEWS = int(os.environ.get("FIRST_NEWS", "50"))
+NEWS_MARK = os.environ.get("NEWS_MARK", "/Noticia/")
 # Intervalo entre envios. O SPN aceita ~15 por minuto; 5 s fica abaixo disso.
 INTERVAL = float(os.environ.get("INTERVAL_SECONDS", "5"))
 # Tempo máximo da execução (o GitHub mata o job em 6 h)
@@ -131,27 +129,6 @@ class StopRun(Exception):
     pass
 
 
-def norm(u):
-    u = u.strip().lower().split("#")[0]
-    for p in ("https://", "http://"):
-        if u.startswith(p):
-            u = u[len(p):]
-    if u.startswith("www."):
-        u = u[4:]
-    u = u.replace(":80/", "/").replace(":443/", "/")
-    return u.rstrip("/")
-
-
-def archived_set():
-    """URLs do domínio que já têm alguma captura no Wayback (uma consulta só)."""
-    try:
-        raw = fetch(CDX_URL, tries=3).decode("utf-8", "replace")
-    except Exception as e:  # noqa: BLE001
-        log(f"não consegui consultar o índice do Wayback ({e}); sigo sem ele")
-        return None
-    return {norm(l) for l in raw.splitlines() if l.strip()}
-
-
 def spn_save(url, outlinks, skip_hours):
     data = {
         "url": url,
@@ -215,6 +192,42 @@ def spn_save(url, outlinks, skip_hours):
     return "erro", "esgotou tentativas"
 
 
+# ---------------------------------------------------------------- estado
+SEEN_FILE = os.path.join(STATUS_DIR, "noticias_vistas.txt")
+LAST_FILE = os.path.join(STATUS_DIR, "ultima_execucao.json")
+MAIN_FILE = os.path.join(STATUS_DIR, "paginas_principais.json")
+
+
+def load_main_state():
+    try:
+        with open(MAIN_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def load_seen():
+    if not os.path.exists(SEEN_FILE):
+        return None
+    with open(SEEN_FILE, encoding="utf-8") as f:
+        return {l.strip() for l in f if l.strip()}
+
+
+def save_seen(seen):
+    os.makedirs(STATUS_DIR, exist_ok=True)
+    with open(SEEN_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(sorted(seen)) + "\n")
+
+
+def last_run_time():
+    try:
+        with open(LAST_FILE, encoding="utf-8") as f:
+            j = json.load(f)
+        return dt.datetime.fromisoformat(j["data_utc"])
+    except Exception:  # noqa: BLE001
+        return None
+
+
 # ---------------------------------------------------------------- main
 def main():
     if not IA_ACCESS or not IA_SECRET:
@@ -225,32 +238,49 @@ def main():
     for u in read_extras():
         pages.setdefault(u, None)
     pages.setdefault(HOME_URL, None)
-    log(f"{len(pages)} URLs no total")
 
     now = dt.datetime.now(dt.timezone.utc)
-    recent_cut = now - dt.timedelta(days=OUTLINKS_DAYS)
-    priority = [HOME_URL] + sorted(
-        (u for u, lm in pages.items() if lm and lm >= recent_cut and u != HOME_URL),
-        key=lambda u: pages[u],
+    last = last_run_time() or (now - dt.timedelta(days=1))
+    seen = load_seen()
+    first_run = seen is None
+
+    news = sorted(
+        (u for u in pages if NEWS_MARK in u),
+        key=lambda u: pages[u] or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
         reverse=True,
     )
-    prio_set = set(priority)
-    rest = [u for u in pages if u not in prio_set]
-    random.shuffle(rest)  # cada dia cobre uma parte diferente do acervo
-    known = archived_set()
-    if known is not None:
-        never = [u for u in rest if norm(u) not in known]
-        never_set = set(never)
-        old = [u for u in rest if u not in never_set]
-        log(f"índice do Wayback: {len(known)} URLs já arquivadas; {len(never)} páginas do sitemap nunca foram salvas")
+    main_pages = [u for u in pages if NEWS_MARK not in u and u != HOME_URL]
+    log(f"{len(pages)} URLs no sitemap: {len(news)} notícias, {len(main_pages) + 1} páginas principais")
+
+    if first_run:
+        news_todo = news[:FIRST_NEWS]
+        seen = set(news[FIRST_NEWS:])  # acervo antigo fica de fora
+        log(f"primeira execução: salvando as {len(news_todo)} notícias mais recentes")
     else:
-        never, old = [], rest
+        news_todo = [u for u in news if u not in seen or (pages[u] and pages[u] > last)]
+        log(f"{len(news_todo)} notícias novas ou atualizadas desde {last:%d/%m %H:%M} UTC")
+
+    changed = [u for u in main_pages if pages[u] and pages[u] > last]
+    changed_set = set(changed)
+    # conferência semanal espalhada: cada dia, as ~1/7 salvas há mais tempo
+    main_state = load_main_state()
+    per_day = -(-len(main_pages) // max(1, int(REFRESH_DAYS)))
+    others = sorted(
+        (u for u in main_pages if u not in changed_set),
+        key=lambda u: main_state.get(u, ""),
+    )[:per_day]
+    log(f"páginas principais: {len(changed)} alteradas + {len(others)} da conferência semanal ({len(main_pages)} no total)")
+
+    day = SKIP_IF_ARCHIVED_HOURS
+    week = REFRESH_DAYS * 24
     queue = (
-        [(u, True, SKIP_IF_ARCHIVED_HOURS) for u in priority]
-        + [(u, False, SKIP_IF_ARCHIVED_HOURS) for u in never]
-        + [(u, False, REFRESH_DAYS * 24) for u in old]
+        [(HOME_URL, True, day)]
+        + [(u, True, day) for u in news_todo]
+        + [(u, False, day) for u in changed]
+        + [(u, False, week) for u in others]
     )
-    log(f"fila: {len(priority)} prioritárias, {len(never)} nunca arquivadas, {len(old)} para revisitar (a cada {REFRESH_DAYS:g} dias)")
+    main_pages_set = set(main_pages)
+    log(f"fila de hoje: {len(queue)} URLs")
 
     counts = {"enviado": 0, "pulado": 0, "erro": 0}
     errors = []
@@ -269,6 +299,10 @@ def main():
             break
         counts[status] += 1
         done += 1
+        if NEWS_MARK in url and status != "erro":
+            seen.add(url)
+        elif status != "erro" and url in main_pages_set:
+            main_state[url] = now.isoformat(timespec="seconds")
         if info == "limite diário desta URL":
             daily_hits += 1
             if daily_hits >= 10:
@@ -281,25 +315,28 @@ def main():
         log(f"{done}/{len(queue)} {status:8} {url}" + (f" [{info}]" if status != "enviado" else "") + (" (+links)" if outlinks else ""))
         time.sleep(max(0.0, INTERVAL - (time.monotonic() - t0)))
 
+    save_seen(seen)
+    with open(MAIN_FILE, "w", encoding="utf-8") as f:
+        json.dump(main_state, f, ensure_ascii=False, indent=0, sort_keys=True)
     resumo = {
         "data_utc": now.isoformat(timespec="seconds"),
-        "total_urls": len(queue),
+        "fila": len(queue),
+        "noticias_na_fila": len(news_todo),
         "processadas": done,
         **counts,
         "minutos": round(elapsed_min(), 1),
         "interrompido": stopped,
         "erros": errors[:200],
     }
-    os.makedirs(STATUS_DIR, exist_ok=True)
-    with open(os.path.join(STATUS_DIR, "ultima_execucao.json"), "w", encoding="utf-8") as f:
+    with open(LAST_FILE, "w", encoding="utf-8") as f:
         json.dump(resumo, f, ensure_ascii=False, indent=2)
-    hist = os.path.join(STATUS_DIR, "historico.csv")
+    hist = os.path.join(STATUS_DIR, "execucoes.csv")
     new = not os.path.exists(hist)
     with open(hist, "a", encoding="utf-8") as f:
         if new:
-            f.write("data_utc,total_urls,processadas,enviadas,puladas,erros,minutos,interrompido\n")
+            f.write("data_utc,fila,noticias,processadas,enviadas,puladas,erros,minutos,interrompido\n")
         f.write(
-            f"{resumo['data_utc']},{len(queue)},{done},{counts['enviado']},{counts['pulado']},"
+            f"{resumo['data_utc']},{len(queue)},{len(news_todo)},{done},{counts['enviado']},{counts['pulado']},"
             f"{counts['erro']},{resumo['minutos']},{(stopped or '').replace(',', ';')}\n"
         )
 
@@ -307,9 +344,9 @@ def main():
     if summary:
         with open(summary, "a", encoding="utf-8") as f:
             f.write("## Arquivamento SETI no Wayback\n\n")
-            f.write("| URLs | processadas | enviadas | puladas (já salvas) | erros | minutos |\n")
-            f.write("|---|---|---|---|---|---|\n")
-            f.write(f"| {len(queue)} | {done} | {counts['enviado']} | {counts['pulado']} | {counts['erro']} | {resumo['minutos']} |\n")
+            f.write("| fila | notícias | processadas | enviadas | puladas (já salvas) | erros | minutos |\n")
+            f.write("|---|---|---|---|---|---|---|\n")
+            f.write(f"| {len(queue)} | {len(news_todo)} | {done} | {counts['enviado']} | {counts['pulado']} | {counts['erro']} | {resumo['minutos']} |\n")
             if stopped:
                 f.write(f"\nInterrompido: {stopped}\n")
 
