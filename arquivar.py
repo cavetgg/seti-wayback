@@ -31,8 +31,15 @@ SPN_ENDPOINT = os.environ.get("SPN_ENDPOINT", "https://web.archive.org/save")
 IA_ACCESS = os.environ.get("IA_ACCESS", "").strip()
 IA_SECRET = os.environ.get("IA_SECRET", "").strip()
 
-# Não reenvia uma página arquivada há menos de X horas (evita duplicar)
+# Home e páginas novas: não reenvia se já arquivada há menos de X horas
 SKIP_IF_ARCHIVED_HOURS = float(os.environ.get("SKIP_IF_ARCHIVED_HOURS", "20"))
+# Acervo antigo: só recaptura se a última captura tiver mais de N dias
+REFRESH_DAYS = float(os.environ.get("REFRESH_DAYS", "30"))
+CDX_URL = os.environ.get(
+    "CDX_URL",
+    "https://web.archive.org/cdx/search/cdx?url=seti.pr.gov.br/*&fl=original"
+    "&collapse=urlkey&filter=statuscode:200&filter=mimetype:text/html",
+)
 # Páginas alteradas nos últimos N dias também salvam os links delas (PDFs etc.)
 OUTLINKS_DAYS = float(os.environ.get("OUTLINKS_DAYS", "3"))
 # Intervalo entre envios. O SPN aceita ~15 por minuto; 5 s fica abaixo disso.
@@ -124,11 +131,32 @@ class StopRun(Exception):
     pass
 
 
-def spn_save(url, outlinks):
+def norm(u):
+    u = u.strip().lower().split("#")[0]
+    for p in ("https://", "http://"):
+        if u.startswith(p):
+            u = u[len(p):]
+    if u.startswith("www."):
+        u = u[4:]
+    u = u.replace(":80/", "/").replace(":443/", "/")
+    return u.rstrip("/")
+
+
+def archived_set():
+    """URLs do domínio que já têm alguma captura no Wayback (uma consulta só)."""
+    try:
+        raw = fetch(CDX_URL, tries=3).decode("utf-8", "replace")
+    except Exception as e:  # noqa: BLE001
+        log(f"não consegui consultar o índice do Wayback ({e}); sigo sem ele")
+        return None
+    return {norm(l) for l in raw.splitlines() if l.strip()}
+
+
+def spn_save(url, outlinks, skip_hours):
     data = {
         "url": url,
         "capture_all": "1",
-        "if_not_archived_within": f"{int(SKIP_IF_ARCHIVED_HOURS * 3600)}",
+        "if_not_archived_within": f"{int(skip_hours * 3600)}",
         "skip_first_archive": "1",
     }
     if outlinks:
@@ -147,7 +175,7 @@ def spn_save(url, outlinks):
                 txt = r.read().decode("utf-8", "replace")
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                wait = 60 * (attempt + 1)
+                wait = 30 * (attempt + 1)
                 log(f"  429 (muitas requisições); esperando {wait}s")
                 time.sleep(wait)
                 continue
@@ -205,21 +233,33 @@ def main():
     )
     prio_set = set(priority)
     rest = [u for u in pages if u not in prio_set]
-    random.shuffle(rest)  # se o tempo acabar, cada dia cobre uma parte diferente
-    queue = [(u, True) for u in priority] + [(u, False) for u in rest]
-    log(f"{len(priority)} prioritárias (home + alteradas em {OUTLINKS_DAYS:g} dias), {len(rest)} restantes")
+    random.shuffle(rest)  # cada dia cobre uma parte diferente do acervo
+    known = archived_set()
+    if known is not None:
+        never = [u for u in rest if norm(u) not in known]
+        never_set = set(never)
+        old = [u for u in rest if u not in never_set]
+        log(f"índice do Wayback: {len(known)} URLs já arquivadas; {len(never)} páginas do sitemap nunca foram salvas")
+    else:
+        never, old = [], rest
+    queue = (
+        [(u, True, SKIP_IF_ARCHIVED_HOURS) for u in priority]
+        + [(u, False, SKIP_IF_ARCHIVED_HOURS) for u in never]
+        + [(u, False, REFRESH_DAYS * 24) for u in old]
+    )
+    log(f"fila: {len(priority)} prioritárias, {len(never)} nunca arquivadas, {len(old)} para revisitar (a cada {REFRESH_DAYS:g} dias)")
 
     counts = {"enviado": 0, "pulado": 0, "erro": 0}
     errors = []
     stopped = None
     done = 0
-    for url, outlinks in queue:
+    for url, outlinks, skip_hours in queue:
         if elapsed_min() > MAX_MINUTES:
             stopped = f"tempo máximo ({MAX_MINUTES:g} min) atingido"
             break
         t0 = time.monotonic()
         try:
-            status, info = spn_save(url, outlinks)
+            status, info = spn_save(url, outlinks, skip_hours)
         except StopRun as e:
             stopped = str(e)
             break
