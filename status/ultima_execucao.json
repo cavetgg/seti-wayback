@@ -1,11 +1,12 @@
 {
-  "data_utc": "2026-11-10T10:37:27+00:00",
-  "total_urls": 12378,
-  "processadas": 0,
-  "enviado": 0,
-  "pulado": 0,
+  "data_utc": "2026-11-10T10:55:46+00:00",
+  "fila": 76,
+  "noticias_na_fila": 50,
+  "processadas": 76,
+  "enviado": 60,
+  "pulado": 16,
   "erro": 0,
-  "minutos": 0.4,
-  "interrompido": "limite diário de capturas do Internet Archive atingido",
+  "minutos": 63.9,
+  "interrompido": null,
   "erros": []
 }
