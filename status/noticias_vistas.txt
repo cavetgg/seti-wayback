@@ -121,6 +121,7 @@ https://www.seti.pr.gov.br/Noticia/70-cursos-das-universidades-estaduais-tem-des
 https://www.seti.pr.gov.br/Noticia/74-estudantes-participam-da-turma-2023-do-Cursinho-Pre-Vestibular-da-Unicentro
 https://www.seti.pr.gov.br/Noticia/77-mil-candidatos-fazem-provas-do-vestibular-da-UEPG-neste-domingo
 https://www.seti.pr.gov.br/Noticia/78-anos-revista-editada-pelo-Tecpar-passa-por-processo-de-modernizacao
+https://www.seti.pr.gov.br/Noticia/80-Clubes-de-Ciencias-da-rede-estadual-participam-do-maior-evento-de-divulgacao-cientifica
 https://www.seti.pr.gov.br/Noticia/80-dos-adolescentes-de-Toledo-ja-receberam-primeira-dose-da-vacina-contra-Covid-19
 https://www.seti.pr.gov.br/Noticia/82-novos-residentes-passam-integrar-equipes-de-saude-do-Hospital-Universitario-do-Oeste
 https://www.seti.pr.gov.br/Noticia/86-dos-municipios-nao-registraram-mortes-por-Covid-19-nos-10-primeiros-dias-de-novembro
@@ -498,6 +499,7 @@ https://www.seti.pr.gov.br/Noticia/Arte-feita-com-galhos-da-macieira
 https://www.seti.pr.gov.br/Noticia/Artes-Cenicas-oferta-comunidade-diversos-cursos-e-evento-de-extensao
 https://www.seti.pr.gov.br/Noticia/Artesas-de-Ortigueira-ganham-novas-opcoes-de-emprego-ao-aprenderem-costura
 https://www.seti.pr.gov.br/Noticia/Artigo-de-pesquisadoras-publicado-pelo-Ipardes-mostra-gastos-em-ciencia-e-tecnologia-no
+https://www.seti.pr.gov.br/Noticia/Artigos-selecionados-revista-Cientifica-do-Tecpar-completa-80-anos-com-edicao-especial
 https://www.seti.pr.gov.br/Noticia/Asfalto-Novo-Vida-Nova-vai-tirar-mais-de-37-mil-toneladas-por-ano-de-poeira-das-cidades
 https://www.seti.pr.gov.br/Noticia/Assai-e-Ponta-Grossa-estao-entre-21-comunidades-mais-inteligentes-do-mundo
 https://www.seti.pr.gov.br/Noticia/Assai-entra-novamente-na-lista-das-sete-comunidades-mais-inteligentes-do-mundo
@@ -2555,6 +2557,7 @@ https://www.seti.pr.gov.br/Noticia/Estado-investe-R-13-milhoes-e-amplia-acesso-d
 https://www.seti.pr.gov.br/Noticia/Estado-investe-R-147-milhoes-em-nova-fase-do-programa-Parana-Mais-Organico
 https://www.seti.pr.gov.br/Noticia/Estado-investe-R-182-milhoes-em-permanencia-universitaria-com-foco-em-empreendedorismo
 https://www.seti.pr.gov.br/Noticia/Estado-investe-R-19-milhao-em-novos-equipamentos-na-Clinica-Odontologica-da-UEM
+https://www.seti.pr.gov.br/Noticia/Estado-investe-R-2-milhoes-em-pesquisas-que-conectam-ciencia-e-mercado
 https://www.seti.pr.gov.br/Noticia/Estado-investe-R-21-milhoes-em-projeto-piloto-de-agricultura-de-precisao-em-20-propriedades
 https://www.seti.pr.gov.br/Noticia/Estado-investe-R-24-milhoes-na-construcao-de-nova-sede-de-colegio-estadual-em-Guarapuava
 https://www.seti.pr.gov.br/Noticia/Estado-investe-R-255-milhoes-para-construcao-de-barracoes-e-espacos-de-coworking-em-250
@@ -2585,6 +2588,7 @@ https://www.seti.pr.gov.br/Noticia/Estado-lanca-Programa-de-Educacao-Previdencia
 https://www.seti.pr.gov.br/Noticia/Estado-lanca-aplicativo-para-ajudar-no-combate-Covid-19
 https://www.seti.pr.gov.br/Noticia/Estado-lanca-capacitacao-em-empreendedorismo-digital-e-cartilha-com-solucoes-tecnologicas
 https://www.seti.pr.gov.br/Noticia/Estado-lanca-chamada-publica-do-Zicosur-Universitario-com-investimento-de-R-55-milhoes
+https://www.seti.pr.gov.br/Noticia/Estado-lanca-documentario-que-retrata-o-impacto-da-ciencia-na-vida-dos-paranaenses
 https://www.seti.pr.gov.br/Noticia/Estado-lanca-edital-de-R-125-milhoes-para-revitalizar-Parque-da-Ciencia-Newton-Freire-Maia
 https://www.seti.pr.gov.br/Noticia/Estado-lanca-edital-de-R-295-milhoes-para-fortalecer-ambientes-de-inovacao
 https://www.seti.pr.gov.br/Noticia/Estado-lanca-edital-do-Parque-Tecnologico-da-Saude-do-Tecpar-em-Maringa
@@ -5678,6 +5682,7 @@ https://www.seti.pr.gov.br/Noticia/Oficina-volante-leva-tecnologia-ao-setor-de-c
 https://www.seti.pr.gov.br/Noticia/Oficinas-da-Operacao-Rondon-Parana-2025-ja-estao-em-andamento-no-Norte-Pioneiro
 https://www.seti.pr.gov.br/Noticia/Oficinas-da-Rota-Turistica-Caminhos-do-Peabiru-chegam-regioes-de-Reserva-e-Paranagua
 https://www.seti.pr.gov.br/Noticia/Oficinas-de-plantas-medicinais-saude-e-gastronomia-marcam-acoes-da-Operacao-Rondon
+https://www.seti.pr.gov.br/Noticia/Oficinas-de-tecnologia-Carreta-da-Inovacao-chega-Cascavel-e-Sao-Manoel-do-Parana
 https://www.seti.pr.gov.br/Noticia/Oficinas-regionais-do-MoWBrasil-serao-realizadas-na-Unespar
 https://www.seti.pr.gov.br/Noticia/Oito-mil-alunos-da-Unicentro-voltam-aulas-nesta-segunda-feira
 https://www.seti.pr.gov.br/Noticia/Olericultura-sera-tema-de-Simposio-Sul-Brasileiro-na-proxima-semana
@@ -5824,6 +5829,7 @@ https://www.seti.pr.gov.br/Noticia/Parana-Fala-Ingles-da-UEM-abre-inscricoes-par
 https://www.seti.pr.gov.br/Noticia/Parana-Fala-Ingles-oferta-vagas-para-profissionais-graduados-na-Unespar
 https://www.seti.pr.gov.br/Noticia/Parana-Fala-ingles-divulga-edital-do-programa-de-mobilidade
 https://www.seti.pr.gov.br/Noticia/Parana-Faz-Ciencia-2024-na-UEM-supera-expectativas-e-atrai-38-mil-visitantes
+https://www.seti.pr.gov.br/Noticia/Parana-Faz-Ciencia-2026-Unioeste-recebe-maior-evento-de-divulgacao-cientifica-do-Pais
 https://www.seti.pr.gov.br/Noticia/Parana-Faz-Ciencia-recebe-mais-de-20-mil-visitantes-em-cinco-dias-de-evento
 https://www.seti.pr.gov.br/Noticia/Parana-Faz-Ciencia-reune-700-alunos-da-rede-em-mostra-inedita-de-projetos-cientificos
 https://www.seti.pr.gov.br/Noticia/Parana-Mais-Cidades-evento-vai-fortalecer-parcerias-do-Estado-com-municipios
@@ -5888,6 +5894,7 @@ https://www.seti.pr.gov.br/Noticia/Parana-avanca-em-acoes-afirmativas-com-inclus
 https://www.seti.pr.gov.br/Noticia/Parana-avanca-na-cooperacao-com-Quebec
 https://www.seti.pr.gov.br/Noticia/Parana-avanca-na-integracao-dos-ecossistemas-de-inovacao-e-dos-ativos-tecnologicos
 https://www.seti.pr.gov.br/Noticia/Parana-avanca-na-internacionalizacao-da-erva-mate-com-novas-parcerias
+https://www.seti.pr.gov.br/Noticia/Parana-avanca-nos-preparativos-para-sinalizacao-da-Rota-Turistica-Caminhos-do-Peabiru
 https://www.seti.pr.gov.br/Noticia/Parana-bate-recorde-de-inscritos-em-programa-de-incentivo-inovacao
 https://www.seti.pr.gov.br/Noticia/Parana-bate-recorde-de-investimento-em-alimentos-organicos-nas-escolas-estaduais
 https://www.seti.pr.gov.br/Noticia/Parana-busca-novas-parcerias-com-India-na-area-farmaceutica
@@ -5907,6 +5914,7 @@ https://www.seti.pr.gov.br/Noticia/Parana-confirma-mais-um-obito-pela-variante-d
 https://www.seti.pr.gov.br/Noticia/Parana-conhece-experiencia-da-India-para-impulsionar-cadeia-da-sericicultura
 https://www.seti.pr.gov.br/Noticia/Parana-conquista-cinco-premios-no-BrasilGov-Summit-2026-com-inovacoes-tecnologicas
 https://www.seti.pr.gov.br/Noticia/Parana-consolida-estrategia-de-desenvolvimento-regional-com-universidades-estaduais
+https://www.seti.pr.gov.br/Noticia/Parana-consolida-lideranca-nacional-em-organicos-e-amplia-suporte-tecnico-no-campo
 https://www.seti.pr.gov.br/Noticia/Parana-credencia-302-ambientes-promotores-de-inovacao-para-impulsionar-ecossistemas
 https://www.seti.pr.gov.br/Noticia/Parana-cria-Conta-Inovacao-para-o-desenvolvimento-de-projetos-inovadores
 https://www.seti.pr.gov.br/Noticia/Parana-cria-agencias-de-desenvolvimento-regional-para-impulsionar-novas-vocacoes
@@ -8876,6 +8884,7 @@ https://www.seti.pr.gov.br/Noticia/TECPAR-realiza-Feira-de-Estagios-para-estudan
 https://www.seti.pr.gov.br/Noticia/TI-na-pratica-alunos-do-Talento-Tech-fazem-visita-imersiva-na-Smart-City-Expo-Curitiba
 https://www.seti.pr.gov.br/Noticia/TV-Educativa-exibe-ciclo-de-debates-sobre-extensao-universitaria-no-Parana
 https://www.seti.pr.gov.br/Noticia/TV-Educativa-exibe-programa-sobre-projeto-do-assentamento-Paiol-de-Telha
+https://www.seti.pr.gov.br/Noticia/TV-Parana-Turismo-e-radios-Educativa-discutem-desafios-da-comunicacao-em-encontro-em
 https://www.seti.pr.gov.br/Noticia/TV-Parana-Turismo-estreia-programa-sobre-ciencia-e-inovacao-nas-universidades
 https://www.seti.pr.gov.br/Noticia/TV-Parana-Turismo-seleciona-novos-produtos-audiovisuais-veja-como-se-inscrever
 https://www.seti.pr.gov.br/Noticia/TV-Sinal-entrevista-secretaria-Lygia-e-reitor-da-UEPG
@@ -9100,6 +9109,7 @@ https://www.seti.pr.gov.br/Noticia/Tecpar-formaliza-parceria-com-empresas-russa-
 https://www.seti.pr.gov.br/Noticia/Tecpar-fornece-medicamentos-para-tratamento-de-cancer-e-vacinas-ao-SUS
 https://www.seti.pr.gov.br/Noticia/Tecpar-fornecera-26-milhoes-de-doses-da-vacina-antirrabica-veterinaria-ao-governo-federal
 https://www.seti.pr.gov.br/Noticia/Tecpar-fornecera-28-milhoes-de-doses-da-vacina-antirrabica-veterinaria-ao-Ministerio-da
+https://www.seti.pr.gov.br/Noticia/Tecpar-fortalece-defesa-sanitaria-com-banco-brasileiro-de-antigenos-para-febre-aftosa
 https://www.seti.pr.gov.br/Noticia/Tecpar-fortalece-presenca-no-Interior-e-se-consolida-como-referencia-em-novas-tecnologias
 https://www.seti.pr.gov.br/Noticia/Tecpar-ganha-trofeu-bronze-em-premio-de-qualidade-em-gestao
 https://www.seti.pr.gov.br/Noticia/Tecpar-garante-qualidade-de-seringas-escovas-de-dente
@@ -9424,6 +9434,7 @@ https://www.seti.pr.gov.br/Noticia/UEL-aplicara-provas-do-vestibular-2023-em-cin
 https://www.seti.pr.gov.br/Noticia/UEL-aponta-empresa-regional-para-reconstruir-Ouro-Verde
 https://www.seti.pr.gov.br/Noticia/UEL-apresenta-Selo-comemorativo-45-anos
 https://www.seti.pr.gov.br/Noticia/UEL-apresenta-projetos-de-ensino-e-extensao-na-75a-Reuniao-Anual-da-SBPC
+https://www.seti.pr.gov.br/Noticia/UEL-apresenta-projetos-em-inovacao-no-Parana-Faz-Ciencia-2026-em-Cascavel
 https://www.seti.pr.gov.br/Noticia/UEL-apresenta-seus-52-cursos-estudantes-do-Ensino-Medio-nesta-quinta-feira
 https://www.seti.pr.gov.br/Noticia/UEL-aprova-8224-para-2a-fase-do-Vestibular-2019-que-sera-em-dezembro
 https://www.seti.pr.gov.br/Noticia/UEL-aprova-8911-candidatos-na-1a-fase
@@ -11826,6 +11837,7 @@ https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-garantem-mais-de-20-m
 https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-iniciam-2025-com-reconhecimento-global-em-oito-areas-academicas
 https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-integram-rede-para-impulsionar-producao-de-morangos-no-Pais
 https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-intensificam-campanha-de-prevencao-ao-cancer-de-prostata
+https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-levam-educacao-e-desenvolvimento-criancas-paranaenses
 https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-levam-projetos-de-ciencia-tecnologia-e-saude-ao-Verao-Maior-Parana
 https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-oferecem-assistencia-animais-de-pequeno-e-grande-porte
 https://www.seti.pr.gov.br/Noticia/Universidades-estaduais-oferecem-atendimento-juridico-gratuito-em-11-cidades-do-Parana
