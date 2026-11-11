@@ -40,6 +40,8 @@ MAIN_PER_RUN = int(os.environ.get("MAIN_PER_RUN", "25"))
 # Na primeira execução, quantas notícias recentes salvar
 FIRST_NEWS = int(os.environ.get("FIRST_NEWS", "50"))
 NEWS_MARK = os.environ.get("NEWS_MARK", "/Noticia/")
+# Página de listagem de notícias (o sitemap da SETI atrasa semanas; a listagem não)
+NEWS_LIST_URL = os.environ.get("NEWS_LIST_URL", "https://www.seti.pr.gov.br/Noticias")
 # Intervalo entre envios. O SPN aceita ~15 por minuto; 5 s fica abaixo disso.
 INTERVAL = float(os.environ.get("INTERVAL_SECONDS", "5"))
 # Tempo máximo da execução (o GitHub mata o job em 6 h)
@@ -114,6 +116,23 @@ def read_sitemap(url, seen=None):
                     lastmod = parse_lastmod(c.text)
             if loc:
                 out[loc] = lastmod
+    return out
+
+
+def read_news_list():
+    """Notícias da página de listagem, da mais nova para a mais antiga."""
+    import re
+
+    try:
+        html = fetch(NEWS_LIST_URL, tries=3).decode("utf-8", "replace")
+    except Exception as e:  # noqa: BLE001
+        log(f"não consegui ler a listagem de notícias ({e}); sigo só com o sitemap")
+        return []
+    out = []
+    for href in re.findall(r'href="([^"]*' + re.escape(NEWS_MARK) + r'[^"#?]*)"', html):
+        u = urllib.parse.urljoin(NEWS_LIST_URL, href)
+        if u not in out:
+            out.append(u)
     return out
 
 
@@ -249,7 +268,11 @@ def main():
         key=lambda u: pages[u] or dt.datetime.min.replace(tzinfo=dt.timezone.utc),
         reverse=True,
     )
-    main_pages = [u for u in pages if NEWS_MARK not in u and u != HOME_URL]
+    listed = read_news_list()
+    missing = [u for u in listed if u not in pages]
+    log(f"listagem de notícias: {len(listed)} itens, {len(missing)} ainda fora do sitemap")
+    news = list(dict.fromkeys(listed + news))  # listagem primeiro (mais recentes)
+    main_pages = [u for u in pages if NEWS_MARK not in u and u != HOME_URL and u != NEWS_LIST_URL]
     log(f"{len(pages)} URLs no sitemap: {len(news)} notícias, {len(main_pages) + 1} páginas principais")
 
     if first_run:
@@ -257,7 +280,7 @@ def main():
         seen = set(news[FIRST_NEWS:])  # acervo antigo fica de fora
         log(f"primeira execução: salvando as {len(news_todo)} notícias mais recentes")
     else:
-        news_todo = [u for u in news if u not in seen or (pages[u] and pages[u] > last)]
+        news_todo = [u for u in news if u not in seen or (pages.get(u) and pages[u] > last)]
         log(f"{len(news_todo)} notícias novas ou atualizadas desde {last:%d/%m %H:%M} UTC")
 
     changed = [u for u in main_pages if pages[u] and pages[u] > last]
@@ -272,7 +295,7 @@ def main():
 
     day = SKIP_IF_ARCHIVED_HOURS
     queue = (
-        [(HOME_URL, True, day)]
+        [(HOME_URL, True, day), (NEWS_LIST_URL, False, day)]
         + [(u, True, day) for u in news_todo]
         + [(u, False, day) for u in changed]
         + [(u, False, day) for u in others]
