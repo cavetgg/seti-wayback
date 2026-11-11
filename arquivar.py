@@ -9,7 +9,7 @@ Fluxo:
      - notícias novas ou atualizadas desde a última execução (com links);
        na primeira execução, só as FIRST_NEWS mais recentes;
      - páginas principais (tudo que não é notícia): as alteradas todo dia,
-       as demais uma vez a cada REFRESH_DAYS dias.
+       as demais em rodízio, MAIN_PER_RUN por execução (as salvas há mais tempo).
   3. Envia cada URL para o Save Page Now 2 (SPN2), respeitando o limite.
   4. Grava em status/ o registro da execução e a lista de notícias já vistas.
 
@@ -34,9 +34,9 @@ IA_ACCESS = os.environ.get("IA_ACCESS", "").strip()
 IA_SECRET = os.environ.get("IA_SECRET", "").strip()
 
 # Home, notícias novas e páginas alteradas: não reenvia se salva há menos de X horas
-SKIP_IF_ARCHIVED_HOURS = float(os.environ.get("SKIP_IF_ARCHIVED_HOURS", "20"))
-# Páginas principais sem mudança: recaptura a cada N dias
-REFRESH_DAYS = float(os.environ.get("REFRESH_DAYS", "7"))
+SKIP_IF_ARCHIVED_HOURS = float(os.environ.get("SKIP_IF_ARCHIVED_HOURS", "4"))
+# Páginas principais sem mudança: quantas entram no rodízio a cada execução
+MAIN_PER_RUN = int(os.environ.get("MAIN_PER_RUN", "25"))
 # Na primeira execução, quantas notícias recentes salvar
 FIRST_NEWS = int(os.environ.get("FIRST_NEWS", "50"))
 NEWS_MARK = os.environ.get("NEWS_MARK", "/Noticia/")
@@ -262,25 +262,23 @@ def main():
 
     changed = [u for u in main_pages if pages[u] and pages[u] > last]
     changed_set = set(changed)
-    # conferência semanal espalhada: cada dia, as ~1/7 salvas há mais tempo
+    # rodízio: a cada execução, as MAIN_PER_RUN salvas há mais tempo
     main_state = load_main_state()
-    per_day = -(-len(main_pages) // max(1, int(REFRESH_DAYS)))
     others = sorted(
         (u for u in main_pages if u not in changed_set),
         key=lambda u: main_state.get(u, ""),
-    )[:per_day]
-    log(f"páginas principais: {len(changed)} alteradas + {len(others)} da conferência semanal ({len(main_pages)} no total)")
+    )[:MAIN_PER_RUN]
+    log(f"páginas principais: {len(changed)} alteradas + {len(others)} do rodízio ({len(main_pages)} no total)")
 
     day = SKIP_IF_ARCHIVED_HOURS
-    week = REFRESH_DAYS * 24
     queue = (
         [(HOME_URL, True, day)]
         + [(u, True, day) for u in news_todo]
         + [(u, False, day) for u in changed]
-        + [(u, False, week) for u in others]
+        + [(u, False, day) for u in others]
     )
     main_pages_set = set(main_pages)
-    log(f"fila de hoje: {len(queue)} URLs")
+    log(f"fila desta execução: {len(queue)} URLs")
 
     counts = {"enviado": 0, "pulado": 0, "erro": 0}
     errors = []
