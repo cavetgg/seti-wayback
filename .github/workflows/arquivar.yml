@@ -2,7 +2,7 @@ name: Arquivar SETI no Wayback Machine
 
 on:
   schedule:
-    - cron: '23 6 * * *'   # todo dia às 03:23 de Brasília (06:23 UTC)
+    - cron: '23 6,14,22 * * *'   # 3x por dia: 03:23, 11:23 e 19:23 de Brasília
   workflow_dispatch:        # botão "Run workflow" para rodar na hora
 
 permissions:
