@@ -1,10 +1,10 @@
 # Arquivamento diário da SETI no Wayback Machine
 
-Todo dia, às 03:23 (Brasília), o GitHub roda o `arquivar.py`, que lê o `sitemap.xml` da SETI e salva no Wayback Machine:
+Três vezes por dia (03:23, 11:23 e 19:23, horário de Brasília), o GitHub roda o `arquivar.py`, que lê o `sitemap.xml` da SETI e salva no Wayback Machine:
 
-1. **Home**: todo dia, junto com os links dela (PDFs, anexos).
+1. **Home**: a cada execução, junto com os links dela (PDFs, anexos).
 2. **Notícias**: na primeira execução, as 50 mais recentes. Depois, só as novas ou atualizadas desde a última execução, também com os links.
-3. **Páginas principais** (tudo que não é notícia, ~175): as alteradas todo dia; as demais em rodízio, cada uma uma vez por semana (~25 por dia).
+3. **Páginas principais** (tudo que não é notícia, ~175): as alteradas na hora; as demais em rodízio, 25 por execução (o ciclo completo leva uns 2 a 3 dias).
 
 O acervo antigo de notícias fica de fora de propósito, para manter a rotina leve.
 
@@ -37,8 +37,8 @@ Variáveis de ambiente que dá para colocar no passo `env:` do workflow:
 
 | Variável | Padrão | O que faz |
 |---|---|---|
-| `SKIP_IF_ARCHIVED_HOURS` | 20 | Não reenvia página salva há menos de X horas |
-| `REFRESH_DAYS` | 7 | Ciclo do rodízio das páginas principais |
+| `SKIP_IF_ARCHIVED_HOURS` | 4 | Não reenvia página salva há menos de X horas |
+| `MAIN_PER_RUN` | 25 | Páginas principais do rodízio em cada execução |
 | `FIRST_NEWS` | 50 | Notícias salvas na primeira execução |
 | `INTERVAL_SECONDS` | 5 | Intervalo entre envios (o limite do Archive é ~15 por minuto) |
 | `MAX_MINUTES` | 320 | Tempo máximo por execução |
