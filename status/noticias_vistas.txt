@@ -107,6 +107,7 @@ https://www.seti.pr.gov.br/Noticia/56-milhoes-de-consultas-Governo-investiu-R-72
 https://www.seti.pr.gov.br/Noticia/56o-Jogos-Universitarios-iniciam-nesta-sexta-feira-na-UEPG
 https://www.seti.pr.gov.br/Noticia/57-candidatos-participam-do-vestibular-para-pessoas-com-deficiencia-da-UEM
 https://www.seti.pr.gov.br/Noticia/58-milhoes-de-wolbitos-devem-ajudar-Londrina-no-combate-dengue-e-arboviroses
+https://www.seti.pr.gov.br/Noticia/58-pronto-Ratinho-Junior-vistoria-obras-do-novo-planetario-do-Parque-da-Ciencia
 https://www.seti.pr.gov.br/Noticia/60-das-empresas-graduadas-na-Intec-desde-sua-fundacao-seguem-ativas
 https://www.seti.pr.gov.br/Noticia/60-dos-aprovados-no-vestibular-da-UEL-sao-de-escolas-publicas
 https://www.seti.pr.gov.br/Noticia/62-mil-alunos-confira-o-calendario-do-ano-letivo-nas-universidades-estaduais
@@ -330,6 +331,7 @@ https://www.seti.pr.gov.br/Noticia/Alunas-da-Unioeste-criam-tabela-periodica-par
 https://www.seti.pr.gov.br/Noticia/Alunas-indigenas-da-UEPG-contam-com-orgulho-trajetoria-na-universidade
 https://www.seti.pr.gov.br/Noticia/Aluno-da-UEL-conquista-1o-lugar-no-Parana-Criando-Moda
 https://www.seti.pr.gov.br/Noticia/Aluno-da-UEM-vence-hackathon-com-IA-para-diagnosticar-doencas-em-amostras-de-sangue
+https://www.seti.pr.gov.br/Noticia/Aluno-da-rede-estadual-transforma-residuo-da-sericicultura-em-tecnologia-para-proteger
 https://www.seti.pr.gov.br/Noticia/Aluno-da-rede-publica-vai-do-Ganhando-o-Mundo-ao-1o-lugar-de-medicina-em-federal
 https://www.seti.pr.gov.br/Noticia/Aluno-de-colegio-da-UEPG-e-prata-em-Olimpiada-Brasileira-de-Astronomia-e-Astronautica
 https://www.seti.pr.gov.br/Noticia/Aluno-de-colegio-estadual-cria-luvas-inteligentes-que-impactam-reabilitacao-e-comunicacao
@@ -397,6 +399,7 @@ https://www.seti.pr.gov.br/Noticia/Alunos-paranaenses-embarcam-para-Portugal-par
 https://www.seti.pr.gov.br/Noticia/Alunos-selecionados-do-projeto-Talento-Tech-dao-inicio-cronograma-de-aulas
 https://www.seti.pr.gov.br/Noticia/Alunos-socioeconomicamente-vulneraveis-da-UEM-podem-requerer-auxilio-alimentacao
 https://www.seti.pr.gov.br/Noticia/Amamenta-Coach-app-desenvolvido-pela-UEL-auxilia-maes-cuidar-de-prematuros
+https://www.seti.pr.gov.br/Noticia/Ambientes-de-inovacao-do-Parana-discutem-estrategias-para-o-ciclo-2027-2030
 https://www.seti.pr.gov.br/Noticia/Ambulatorio-COVID-19-para-servidores-do-HUUEL-realizou-1144-atendimentos
 https://www.seti.pr.gov.br/Noticia/Ambulatorio-da-UEM-distribui-autotestes-de-HIV-e-preservativos-nesta-quinta-feira
 https://www.seti.pr.gov.br/Noticia/Ambulatorio-da-UEM-faz-exames-rapidos-para-DSTs
@@ -1472,6 +1475,7 @@ https://www.seti.pr.gov.br/Noticia/Complementacao-pedagogica-vai-atender-estudan
 https://www.seti.pr.gov.br/Noticia/Compliance-passa-vigorar-na-UEPG
 https://www.seti.pr.gov.br/Noticia/Comunicacao-da-UEPG-documenta-acoes-contra-Covid-19-no-Parana
 https://www.seti.pr.gov.br/Noticia/Comunicacao-publica-estadual-tera-restricoes-durante-o-periodo-eleitoral
+https://www.seti.pr.gov.br/Noticia/Comunicado-oficial-da-Universidade-Estadual-de-Maringa
 https://www.seti.pr.gov.br/Noticia/Comunidade-Universitaria-da-UEL-elege-nova-reitoria-nesta-quarta-feira-11
 https://www.seti.pr.gov.br/Noticia/Comunidade-academica-da-Unioeste-presta-homenagens-vitimas-do-voo-2283
 https://www.seti.pr.gov.br/Noticia/Comunidade-cientifica-debate-diretrizes-para-Ciencia-Tecnologia-e-Inovacao-do-Parana
@@ -2958,6 +2962,8 @@ https://www.seti.pr.gov.br/Noticia/FAP-prorroga-inscricoes-para-pos-graduacao-em
 https://www.seti.pr.gov.br/Noticia/FAP-reabre-inscricoes-para-o-vestibular
 https://www.seti.pr.gov.br/Noticia/FAP-sediara-Encontro-de-Secretarios-das-IEES
 https://www.seti.pr.gov.br/Noticia/FAP-vai-selecionar-professor-de-Estagio-Supervisionado-em-Musica
+https://www.seti.pr.gov.br/Noticia/FECCI-2026-reune-688-projetos-cientificos-de-alunos-e-destaca-Clubes-de-Ciencias-do-Parana
+https://www.seti.pr.gov.br/Noticia/FECCI-2026-reune-jovens-pesquisadores-com-acoes-de-popularizacao-da-ciencia
 https://www.seti.pr.gov.br/Noticia/Fabio-Neia-e-Ricardo-Campos-sao-eleitos-para-os-cargos-de-reitor-e-vice-da-UENP
 https://www.seti.pr.gov.br/Noticia/Fabrica-de-Ideias-e-apresentada-autoridades-e-empresarios-no-encerramento-do-Smart-City
 https://www.seti.pr.gov.br/Noticia/Fabrica-de-Ideias-vai-levar-o-Parana-para-vanguarda-da-tecnologia-afirma-Ratinho-Junior
@@ -3913,6 +3919,7 @@ https://www.seti.pr.gov.br/Noticia/Governo-promove-foruns-regionais-de-planejame
 https://www.seti.pr.gov.br/Noticia/Governo-promove-pesquisa-e-inovacao-tecnologica
 https://www.seti.pr.gov.br/Noticia/Governo-promove-programacao-especial-para-o-Mes-da-Ciencia-Tecnologia-e-Inovacoes
 https://www.seti.pr.gov.br/Noticia/Governo-promove-recepcao-para-160-profissionais-aprovados-em-programa-de-residencia-de
+https://www.seti.pr.gov.br/Noticia/Governo-promove-seminario-para-consolidar-Rota-Turistica-Caminhos-do-Peabiru
 https://www.seti.pr.gov.br/Noticia/Governo-propoe-lei-que-permite-que-Unespar-incorpore-cursos-da-Uniuv-em-Uniao-da-Vitoria
 https://www.seti.pr.gov.br/Noticia/Governo-propoe-projeto-de-lei-que-cria-parametros-de-financiamento-das-Universidades
 https://www.seti.pr.gov.br/Noticia/Governo-propoe-reajuste-do-adicional-de-titulacao-para-os-professores-universitarios
@@ -7138,6 +7145,7 @@ https://www.seti.pr.gov.br/Noticia/Programa-destina-R-36-milhoes-propostas-que-f
 https://www.seti.pr.gov.br/Noticia/Programa-destinado-projetos-de-inovacao-esta-com-inscricoes-abertas
 https://www.seti.pr.gov.br/Noticia/Programa-destinado-projetos-de-inovacao-esta-com-inscricoes-abertas-0
 https://www.seti.pr.gov.br/Noticia/Programa-destinara-12-mil-bolsas-de-qualificacao-artistas-e-produtores-culturais
+https://www.seti.pr.gov.br/Noticia/Programa-do-Estado-aproxima-residentes-e-municipios-para-fortalecer-economias-locais
 https://www.seti.pr.gov.br/Noticia/Programa-do-Estado-que-da-visibilidade-ideias-sustentaveis-seleciona-primeiras-empresas
 https://www.seti.pr.gov.br/Noticia/Programa-do-Estado-que-transforma-pesquisas-em-negocios-divulga-finalistas
 https://www.seti.pr.gov.br/Noticia/Programa-do-governo-capacita-empresarios
@@ -7505,6 +7513,7 @@ https://www.seti.pr.gov.br/Noticia/Prova-do-Vestibular-de-Inverno-da-UEM-sera-ap
 https://www.seti.pr.gov.br/Noticia/Provare-abre-inscricoes-para-vagas-remanescentes
 https://www.seti.pr.gov.br/Noticia/Provas-do-25o-Vestibular-dos-Povos-Indigenas-no-Parana-comecam-neste-domingo
 https://www.seti.pr.gov.br/Noticia/Provas-do-PAC-Unicentro-sao-adiadas-e-ocorrerao-em-dois-momentos
+https://www.seti.pr.gov.br/Noticia/Provas-do-PAS-da-UEM-serao-aplicadas-neste-domingo-para-216-mil-estudantes
 https://www.seti.pr.gov.br/Noticia/Provas-do-PSS-3-da-UEPG-acontecem-neste-domingo
 https://www.seti.pr.gov.br/Noticia/Provas-do-Vestibular-EaD-Unicentro-sao-nesse-domingo
 https://www.seti.pr.gov.br/Noticia/Provas-do-Vestibular-de-Inverno-comecam-no-domingo
@@ -8914,6 +8923,7 @@ https://www.seti.pr.gov.br/Noticia/Tecnologia-de-tatames-especiais-auxilia-no-tr
 https://www.seti.pr.gov.br/Noticia/Tecnologia-desenvolvida-pelo-Simepar-subsidia-gestao-de-bacias-do-Sistema-Cantareira
 https://www.seti.pr.gov.br/Noticia/Tecnologia-do-Tecpar-assegura-qualidade-do-alcool-antisseptico
 https://www.seti.pr.gov.br/Noticia/Tecnologia-e-Educacao-50-serao-temas-de-grandes-eventos-na-Expoinga-2023
+https://www.seti.pr.gov.br/Noticia/Tecnologia-e-empreendedorismo-Carreta-da-Inovacao-chega-Salto-do-Itarare-e-Agudos-do-Sul
 https://www.seti.pr.gov.br/Noticia/Tecnologia-empreendedorismo-e-diversao-Carreta-da-Inovacao-chega-Paranagua-nesta-quarta
 https://www.seti.pr.gov.br/Noticia/Tecnologia-japonesa-vai-impulsionar-compostagem-de-lodo-de-esgoto-na-Sanepar
 https://www.seti.pr.gov.br/Noticia/Tecnologia-sustentabilidade-e-investimentos-Estado-tera-ampla-presenca-no-Show-Rural
@@ -9092,6 +9102,7 @@ https://www.seti.pr.gov.br/Noticia/Tecpar-e-selecionado-para-fornecer-vacina-con
 https://www.seti.pr.gov.br/Noticia/Tecpar-e-sexta-empresa-considerada-amiga-da-amamentacao-no-Parana
 https://www.seti.pr.gov.br/Noticia/Tecpar-e-universidades-expoem-tecnologias-na-Feira-do-Empreendedor-2011
 https://www.seti.pr.gov.br/Noticia/Tecpar-entra-em-mercado-de-R-26-bilhoes-de-medicamentos-biologicos-e-hemoderivados
+https://www.seti.pr.gov.br/Noticia/Tecpar-entra-na-reta-final-para-conclusao-de-fabrica-de-insumos-para-saude-animal
 https://www.seti.pr.gov.br/Noticia/Tecpar-entrega-primeira-certificacao-de-seguranca-viaria-do-pais-no-segmento-de-transportes
 https://www.seti.pr.gov.br/Noticia/Tecpar-entrega-primeira-unidade-do-prototipo-da-Casa-Sustentavel
 https://www.seti.pr.gov.br/Noticia/Tecpar-fara-inspecao-veicular-para-Receita-Federal
@@ -10328,6 +10339,7 @@ https://www.seti.pr.gov.br/Noticia/UENP-lanca-Desata-projeto-de-inovacao-e-exten
 https://www.seti.pr.gov.br/Noticia/UENP-lanca-StartUp-Garage-em-parceria-com-o-SEBRAE
 https://www.seti.pr.gov.br/Noticia/UENP-lanca-animacoes-informativas-para-dar-instrucoes-sobre-inscricao-para-Vestibular
 https://www.seti.pr.gov.br/Noticia/UENP-lanca-app-que-auxilia-alunos-em-estudos-para-vestibular-e-Enem
+https://www.seti.pr.gov.br/Noticia/UENP-lanca-estudo-para-orientar-politicas-publicas-em-18-municipios-do-Norte-do-Parana
 https://www.seti.pr.gov.br/Noticia/UENP-lanca-inscricoes-para-Vestibular-2021
 https://www.seti.pr.gov.br/Noticia/UENP-lanca-manual-de-orientacoes-sobre-Covid-19-para-profissionais-de-saude
 https://www.seti.pr.gov.br/Noticia/UENP-lanca-programa-Patronato-em-Santo-Antonio-da-Platina

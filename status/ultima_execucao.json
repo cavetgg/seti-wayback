@@ -1,12 +1,12 @@
 {
-  "data_utc": "2026-11-11T21:28:09+00:00",
-  "fila": 52,
-  "noticias_na_fila": 23,
-  "processadas": 14,
-  "enviado": 2,
-  "pulado": 12,
+  "data_utc": "2026-11-12T03:08:45+00:00",
+  "fila": 39,
+  "noticias_na_fila": 12,
+  "processadas": 39,
+  "enviado": 32,
+  "pulado": 7,
   "erro": 0,
-  "minutos": 11.2,
-  "interrompido": "10 seguidas com limite diário; provável limite da conta, retomo amanhã",
+  "minutos": 43.6,
+  "interrompido": null,
   "erros": []
 }
