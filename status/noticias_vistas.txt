@@ -490,6 +490,7 @@ https://www.seti.pr.gov.br/Noticia/Araucaria-e-SETI-promovem-evento-online-de-mo
 https://www.seti.pr.gov.br/Noticia/Araucaria-e-Seti-lancarao-chamada-publica-para-Nucleos-de-Inovacao-Tecnologica
 https://www.seti.pr.gov.br/Noticia/Araucaria-firma-parceria-com-Mitacs-e-cria-novas-oportunidades-de-pesquisa-e-inovacao
 https://www.seti.pr.gov.br/Noticia/Araucaria-lanca-Napi-Aeronaves-de-Pequeno-Porte-para-instituir-cooperacao-tecnico
+https://www.seti.pr.gov.br/Noticia/Arena-Parana-atrai-milhares-de-visitantes-com-experiencias-praticas-de-ciencia-e-tecnologia
 https://www.seti.pr.gov.br/Noticia/Argentina-oferece-bolsas-de-estudos-para-latino-americanos
 https://www.seti.pr.gov.br/Noticia/Arquiteto-do-museu-que-sera-construido-em-parceria-com-o-Pompidou-fara-palestra-na-UEM
 https://www.seti.pr.gov.br/Noticia/Arquivo-Publico-do-Parana-inaugura-exposicao-valorizando-historia-do-cooperativismo
@@ -1722,6 +1723,7 @@ https://www.seti.pr.gov.br/Noticia/Cultura-e-Unespar-divulgam-resultado-final-do
 https://www.seti.pr.gov.br/Noticia/Cultura-empreendedora-e-tema-de-mesa-redonda-internacional-na-Unicentro
 https://www.seti.pr.gov.br/Noticia/Cultura-empreendedora-e-tema-de-mesa-redonda-internacional-na-Unicentro-0
 https://www.seti.pr.gov.br/Noticia/Cultura-investe-em-editais-para-o-setor-e-vive-momento-de-retomada
+https://www.seti.pr.gov.br/Noticia/Cupula-de-projecao-do-novo-planetario-do-Parana-chega-ao-Parque-da-Ciencia
 https://www.seti.pr.gov.br/Noticia/Curitiba-Maringa-e-Londrina-integram-ranking-mundial-de-melhores-ambientes-de-startups
 https://www.seti.pr.gov.br/Noticia/Curitiba-discute-incentivo-inovacao-em-evento-gratuito-na-FIEP
 https://www.seti.pr.gov.br/Noticia/Curitiba-e-RM-recebem-rodada-de-negocios-de-Extensao-Tecnologica-Empresarial
@@ -6591,6 +6593,7 @@ https://www.seti.pr.gov.br/Noticia/Pesquisas-da-UEPG-resultam-em-projeto-de-lei-
 https://www.seti.pr.gov.br/Noticia/Pesquisas-da-UEPG-sobre-cavernas-integram-livro-finalista-do-Premio-Jabuti-Academico
 https://www.seti.pr.gov.br/Noticia/Pesquisas-da-Unioeste-em-conjunto-com-Unicamp-ampliam-aplicacao-da-computacao-na-medicina
 https://www.seti.pr.gov.br/Noticia/Pesquisas-da-Unioeste-sao-contempladas-no-30o-Premio-Parana-de-Economia
+https://www.seti.pr.gov.br/Noticia/Pesquisas-de-alunos-da-rede-estadual-ampliam-acessibilidade-para-pessoas-cegas-ou-com-baixa
 https://www.seti.pr.gov.br/Noticia/Pesquisas-do-Parana-apontam-como-clima-e-queimadas-impactam-biodiversidade
 https://www.seti.pr.gov.br/Noticia/Pesquisas-em-Eletronica-Organica-terao-R-21-milhoes-de-investimentos-do-Governo
 https://www.seti.pr.gov.br/Noticia/Pesquisas-nas-universidades-estaduais-avaliam-mudancas-climaticas-no-Parana
@@ -6884,6 +6887,7 @@ https://www.seti.pr.gov.br/Noticia/Produto-desenvolvido-na-UEL-determina-o-tipo-
 https://www.seti.pr.gov.br/Noticia/Produto-gerado-em-incubadora-sera-testado-por-multinacional
 https://www.seti.pr.gov.br/Noticia/Produtor-de-mel-organico-de-Prudentopolis-e-certificado-pelo-Tecpar
 https://www.seti.pr.gov.br/Noticia/Produtor-organico-certificado-pelo-Tecpar-tem-juros-reduzidos-no-Plano-Safra
+https://www.seti.pr.gov.br/Noticia/Produtor-rural-recebe-consultoria-de-residencia-e-conquista-premio-com-queijo-autoral
 https://www.seti.pr.gov.br/Noticia/Produtores-de-organicos-usam-tecnologia-para-atender-consumidores
 https://www.seti.pr.gov.br/Noticia/Produtores-familiares-de-organicos-do-Parana-sao-maioria-entre-os-clientes-do-Tecpar
 https://www.seti.pr.gov.br/Noticia/Produtores-organicos-tem-acesso-exportacao
@@ -7037,6 +7041,7 @@ https://www.seti.pr.gov.br/Noticia/Programa-Casulo-abre-para-comunidade-Oficina-
 https://www.seti.pr.gov.br/Noticia/Programa-Centelha-Parana-sera-lancado-na-segunda-feira-com-R-1665-milhao-em-recursos
 https://www.seti.pr.gov.br/Noticia/Programa-Costa-das-Energias-Verdes-ja-tem-plano-de-trabalho-para-implantacao
 https://www.seti.pr.gov.br/Noticia/Programa-Couro-de-Peixe-entrega-mais-de-700-mascaras-no-litoral
+https://www.seti.pr.gov.br/Noticia/Programa-Doutores-Inovando-no-Setor-Empresarial-recebe-inscricoes-ate-16-de-novembro
 https://www.seti.pr.gov.br/Noticia/Programa-Extensao-Tecnologica-Empresarial-e-apresentado-na-Unicentro
 https://www.seti.pr.gov.br/Noticia/Programa-Ganhando-o-Mundo-da-Ciencia-abre-inscricoes-para-intercambio-na-Holanda
 https://www.seti.pr.gov.br/Noticia/Programa-Genomas-Parana-esta-com-inscricoes-abertas-para-bolsistas-com-pos-doutorado
@@ -9046,6 +9051,7 @@ https://www.seti.pr.gov.br/Noticia/Tecpar-debate-energia-limpa-em-lancamento-de-
 https://www.seti.pr.gov.br/Noticia/Tecpar-defende-dois-projetos-de-PDP-no-Ministerio-da-Saude
 https://www.seti.pr.gov.br/Noticia/Tecpar-defende-tres-projetos-de-PDP-no-Ministerio-da-Saude
 https://www.seti.pr.gov.br/Noticia/Tecpar-deposita-novos-pedidos-de-registro-de-marcas-junto-ao-Inpi
+https://www.seti.pr.gov.br/Noticia/Tecpar-desenvolve-e-oferece-ao-mercado-nova-Certificacao-Gestao-de-Ativos
 https://www.seti.pr.gov.br/Noticia/Tecpar-desenvolve-solucao-para-assegurar-qualidade-de-mascaras-profissionais
 https://www.seti.pr.gov.br/Noticia/Tecpar-desenvolve-teste-de-seguranca-de-coldre-para-licitacao-da-PRF
 https://www.seti.pr.gov.br/Noticia/Tecpar-discute-mercado-de-energia-e-lanca-nova-edicao-de-revista
@@ -10878,6 +10884,7 @@ https://www.seti.pr.gov.br/Noticia/UTI-Neonatal-do-HU-UEPG-completa-6-anos
 https://www.seti.pr.gov.br/Noticia/UTI-Neonatal-do-HU-da-UEPG-completa-um-ano-de-atendimento
 https://www.seti.pr.gov.br/Noticia/UTI-Pediatrica-do-HUM-completa-15-anos
 https://www.seti.pr.gov.br/Noticia/UVPR-oferece-cursos-gratuitos-para-formacao-de-professores
+https://www.seti.pr.gov.br/Noticia/UVPR-participa-da-formacao-de-320-militares-em-inteligencia-artificial-no-ambito-do-Projeto
 https://www.seti.pr.gov.br/Noticia/UVPR-promove-Vestibular-Unificado-EAD-com-1230-vagas-em-Universidades-Estaduais
 https://www.seti.pr.gov.br/Noticia/UVPR-realiza-divulgacao-cientifica-na-pagina-Coronavirus-em-Analise
 https://www.seti.pr.gov.br/Noticia/Uenp-divulga-resultado-do-Vestibular-dos-Povos-Indigenas
@@ -11025,6 +11032,7 @@ https://www.seti.pr.gov.br/Noticia/Unespar-lanca-programa-para-discutir-reestrut
 https://www.seti.pr.gov.br/Noticia/Unespar-lanca-projeto-de-extensao-socioambiental-nesta-terca-feira
 https://www.seti.pr.gov.br/Noticia/Unespar-lanca-projeto-para-gerar-renda-e-melhorias-ambientais-em-Pontal-do-Parana
 https://www.seti.pr.gov.br/Noticia/Unespar-lanca-vestibular-complementar-para-2026-com-234-vagas
+https://www.seti.pr.gov.br/Noticia/Unespar-lanca-vestibular-de-Medicina-no-Campus-de-Paranavai
 https://www.seti.pr.gov.br/Noticia/Unespar-lanca-vestibular-exclusivo-para-novos-cursos-tecnologicos-em-Loanda
 https://www.seti.pr.gov.br/Noticia/Unespar-lembra-que-adesao-lista-de-espera-do-SiSU-encerra-nesta-sexta-feira
 https://www.seti.pr.gov.br/Noticia/Unespar-libera-nova-lista-de-aprovados-no-vestibular-2023
