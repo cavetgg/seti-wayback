@@ -862,6 +862,7 @@ https://www.seti.pr.gov.br/Noticia/Carreira-tecnica-universitaria-em-debate
 https://www.seti.pr.gov.br/Noticia/Carreta-da-Inovacao-Araucaria-comemora-136-anos-com-tecnologia-e-ciencia
 https://www.seti.pr.gov.br/Noticia/Carreta-da-Inovacao-atende-ate-domingo-em-Antonina-veja-programacao
 https://www.seti.pr.gov.br/Noticia/Carreta-da-Inovacao-atende-em-Santo-Antonio-da-Platina-e-Tapejara-ate-sexta-feira
+https://www.seti.pr.gov.br/Noticia/Carreta-da-Inovacao-atende-moradores-de-Curitiba-e-Campo-Magro-nesta-semana
 https://www.seti.pr.gov.br/Noticia/Carreta-da-Inovacao-chega-Barra-do-Jacare-e-Sao-Jose-da-Boa-Vista-nesta-semana
 https://www.seti.pr.gov.br/Noticia/Carreta-da-Inovacao-chega-Cambe-e-Maua-da-Serra-com-atividades-gratuitas
 https://www.seti.pr.gov.br/Noticia/Carreta-da-Inovacao-chega-Campo-Largo-e-Campo-Mourao-nesta-semana
@@ -3113,6 +3114,7 @@ https://www.seti.pr.gov.br/Noticia/Formacao-interdisciplinar-e-tema-abordado-no-
 https://www.seti.pr.gov.br/Noticia/Formosa-do-Oeste-e-Imbituva-recebem-atividades-de-inovacao-e-tecnologia-nesta-semana
 https://www.seti.pr.gov.br/Noticia/Fortec-Sul-2010-debate-ciencia-e-tecnologia-em-Curitiba
 https://www.seti.pr.gov.br/Noticia/Fortec-reune-profissionais-de-todo-o-Brasil
+https://www.seti.pr.gov.br/Noticia/Forum-Confap-Parana-recebe-evento-nacional-sobre-ciencia-e-inovacao-com-premiacoes
 https://www.seti.pr.gov.br/Noticia/Forum-Estadual-de-Educacao-entrega-relatorio-com-propostas-de-melhorias
 https://www.seti.pr.gov.br/Noticia/Forum-Mundial-de-Ciencia
 https://www.seti.pr.gov.br/Noticia/Forum-Nacional-Consecti-e-Confap-traz-discussoes-sobre-ciencia-tecnologia-e-inovacao
@@ -7165,6 +7167,7 @@ https://www.seti.pr.gov.br/Noticia/Programa-oferece-bolsas-de-estudos-parciais-p
 https://www.seti.pr.gov.br/Noticia/Programa-para-empreendimentos-inovadores-destinara-ate-R-60-mil-por-projeto
 https://www.seti.pr.gov.br/Noticia/Programa-para-intercambios-de-pesquisa-tem-101-vagas-para-o-Canada-Australia-e-Franca
 https://www.seti.pr.gov.br/Noticia/Programa-paranaense-Talento-Tech-vence-premio-nacional-de-inovacao-em-votacao-popular
+https://www.seti.pr.gov.br/Noticia/Programa-paranaense-lanca-desafios-e-credenciamento-para-projetos-de-inovacao-no-agro
 https://www.seti.pr.gov.br/Noticia/Programa-permite-mobilidade-de-professores-entre-universidades
 https://www.seti.pr.gov.br/Noticia/Programa-propoe-discussoes-sobre-educacao-digital-para-professores-das-universidades
 https://www.seti.pr.gov.br/Noticia/Programa-que-apoia-alunos-da-UEM-em-areas-estrategicas-completa-10-anos
@@ -9255,6 +9258,7 @@ https://www.seti.pr.gov.br/Noticia/Tecpar-recebe-incentivos-fiscais-para-projeto
 https://www.seti.pr.gov.br/Noticia/Tecpar-recebe-novas-tecnologias-no-Living-Lab
 https://www.seti.pr.gov.br/Noticia/Tecpar-recebe-recurso-do-Ministerio-da-Saude-para-projeto-executivo-de-novos-laboratorios
 https://www.seti.pr.gov.br/Noticia/Tecpar-recebe-recursos-do-Ministerio-da-Saude-para-centro-biotecnologico-em-Maringa
+https://www.seti.pr.gov.br/Noticia/Tecpar-reforca-importancia-da-vacinacao-para-prevencao-da-raiva-humana
 https://www.seti.pr.gov.br/Noticia/Tecpar-repete-conquista-do-bronze-no-Premio-Paranaense-da-Qualidade-em-Gestao
 https://www.seti.pr.gov.br/Noticia/Tecpar-responde-duvidas-tecnicas-de-empresas-do-Parana-e-Rio-Grande-do-Sul
 https://www.seti.pr.gov.br/Noticia/Tecpar-se-prepara-para-independencia-orcamentaria
@@ -9394,6 +9398,7 @@ https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-25-mestrados-e-oito-
 https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-30-especialidades-de-residencia-medica
 https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-35-programas-de-mestrado-e-doutorado
 https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-36-mestrados-e-21-doutorados
+https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-450-vagas-do-curso-especial-pre-vestibular-gratuito
 https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-53-cursos-de-especializacao
 https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-Residencias-em-Saude
 https://www.seti.pr.gov.br/Noticia/UEL-abre-inscricoes-para-concurso-de-docentes-salario-chega-R-174-mil

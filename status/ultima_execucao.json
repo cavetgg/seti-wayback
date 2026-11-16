@@ -1,12 +1,12 @@
 {
-  "data_utc": "2026-11-16T02:15:06+00:00",
-  "fila": 27,
-  "noticias_na_fila": 0,
-  "processadas": 27,
-  "enviado": 27,
-  "pulado": 0,
+  "data_utc": "2026-11-16T16:04:44+00:00",
+  "fila": 32,
+  "noticias_na_fila": 5,
+  "processadas": 32,
+  "enviado": 26,
+  "pulado": 6,
   "erro": 0,
-  "minutos": 33.7,
+  "minutos": 32.0,
   "interrompido": null,
   "erros": []
 }
