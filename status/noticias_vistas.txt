@@ -1172,6 +1172,7 @@ https://www.seti.pr.gov.br/Noticia/Com-R-137-milhoes-Estado-vai-erguer-nova-sede
 https://www.seti.pr.gov.br/Noticia/Com-R-16-milhoes-do-CNPq-Parana-reforca-protagonismo-na-producao-de-ciencia
 https://www.seti.pr.gov.br/Noticia/Com-R-19-milhoes-do-Estado-obras-do-Bloco-Industrial-do-HU-de-Maringa-serao-concluidas
 https://www.seti.pr.gov.br/Noticia/Com-R-267-milhoes-do-Estado-UEL-fara-reformas-e-melhorias-em-nove-centros-de-estudos
+https://www.seti.pr.gov.br/Noticia/Com-R-442-mil-em-premios-Estado-reconhece-destaques-da-ciencia-paranaense
 https://www.seti.pr.gov.br/Noticia/Com-R-477-milhoes-em-100-dias-BRDE-aumenta-em-135-o-volume-de-creditos-no-Parana
 https://www.seti.pr.gov.br/Noticia/Com-R-62-milhoes-Governo-renova-cursos-de-ingles-frances-e-espanhol-nas-sete-universidades
 https://www.seti.pr.gov.br/Noticia/Com-UTI-movel-e-tratores-UEM-inicia-2025-com-investimentos-em-26-novos-veiculos
@@ -1538,6 +1539,7 @@ https://www.seti.pr.gov.br/Noticia/Congresso-da-CGE-reune-800-pessoas-em-Curitib
 https://www.seti.pr.gov.br/Noticia/Congresso-da-Federacao-das-Mulheres-do-Parana-reune-mais-de-300-participantes
 https://www.seti.pr.gov.br/Noticia/Congresso-de-Reducao-de-Riscos-de-Desastres-comeca-nesta-quarta-feira
 https://www.seti.pr.gov.br/Noticia/Congresso-de-Saude-Publica-inscreve-com-desconto-ate-dia-15
+https://www.seti.pr.gov.br/Noticia/Congresso-de-governanca-publica-da-CGE-recebe-mais-de-700-pessoas-no-primeiro-dia
 https://www.seti.pr.gov.br/Noticia/Congresso-discute-avancos-e-desafios-da-saude-publica
 https://www.seti.pr.gov.br/Noticia/Congresso-discute-qualidade-dos-gastos-publicos
 https://www.seti.pr.gov.br/Noticia/Congresso-em-Curitiba-debate-o-marxismo-no-seculo-XXI
@@ -4364,6 +4366,7 @@ https://www.seti.pr.gov.br/Noticia/Ideias-para-uma-Educacao-line-completa-um-mes
 https://www.seti.pr.gov.br/Noticia/Idosos-e-portadores-de-doencas-cronicas-sao-os-mais-afetados-pelo-coronavirus
 https://www.seti.pr.gov.br/Noticia/Idosos-podem-fazer-cursos-e-oficinas-gratuitas-nas-universidades-estaduais
 https://www.seti.pr.gov.br/Noticia/Ignacy-Sachs-fala-sobre-o-futuro-dos-biocombustiveis
+https://www.seti.pr.gov.br/Noticia/Igualdade-Racial-Povos-Indigenas-e-Comunidades-Tradicionais-Governo-entrega-planos
 https://www.seti.pr.gov.br/Noticia/Imbituvao-projeto-da-Unicentro-ajuda-mapear-riquezas-e-potenciais-florestais-do-Parana
 https://www.seti.pr.gov.br/Noticia/Impacto-da-Ciencia-Semana-Araucaria-de-CTI-deve-reunir-800-participantes-em-Curitiba
 https://www.seti.pr.gov.br/Noticia/Implantacao-da-Universidade-Federal-de-Integracao-Latino-Americana-em-discussao
@@ -5541,6 +5544,7 @@ https://www.seti.pr.gov.br/Noticia/Novas-propostas-do-Tecpar-para-ser-fornecedor
 https://www.seti.pr.gov.br/Noticia/Novas-terapias-para-tratar-artrite-gotosa
 https://www.seti.pr.gov.br/Noticia/Novas-vagas-para-o-curso-de-Residencia-Tecnica-em-Sistema-Unico-da-Assistencia-Social
 https://www.seti.pr.gov.br/Noticia/NovatecUnicentro-lanca-quarta-edicao-da-Feira-de-Ideias-Inovadoras
+https://www.seti.pr.gov.br/Noticia/Novembro-Negro-Estado-entrega-certificacao-antirracista-a-11-cidades-do-Parana
 https://www.seti.pr.gov.br/Noticia/Novidades-em-tecnologias-de-ponta-sao-atracao-da-FEMAI-Inovatec
 https://www.seti.pr.gov.br/Noticia/Novo-Aparelho-de-Ressonancia-Magnetica-agiliza-atendimento-no-HU-de-Ponta-Grossa
 https://www.seti.pr.gov.br/Noticia/Novo-Arranjo-de-Pesquisa-tem-foco-no-desenvolvimento-da-bioinformatica
