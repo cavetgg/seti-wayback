@@ -356,6 +356,7 @@ https://www.seti.pr.gov.br/Noticia/Alunos-da-area-de-saude-reforcam-combate-ao-n
 https://www.seti.pr.gov.br/Noticia/Alunos-da-rede-estadual-de-ensino-retiram-passaportes-e-se-preparam-para-intercambio-no
 https://www.seti.pr.gov.br/Noticia/Alunos-da-rede-estadual-mostram-projetos-na-Feira-Cientifica-Parana-Faz-Ciencia
 https://www.seti.pr.gov.br/Noticia/Alunos-da-rede-estadual-participam-de-desafio-de-inovacao-do-Estado
+https://www.seti.pr.gov.br/Noticia/Alunos-da-rede-estadual-participarao-de-competicao-de-robotica-com-Lego-no-Mexico
 https://www.seti.pr.gov.br/Noticia/Alunos-da-rede-estadual-podem-ingressar-no-ensino-superior-pelo-Aprova-Parana
 https://www.seti.pr.gov.br/Noticia/Alunos-da-rede-estadual-protagonizam-acoes-de-combate-ao-racismo-e-valorizacao-da-cultura
 https://www.seti.pr.gov.br/Noticia/Alunos-da-rede-estadual-retornam-de-intercambio-na-Nova-Zelandia-cheios-de-historias
@@ -2518,6 +2519,7 @@ https://www.seti.pr.gov.br/Noticia/Estado-e-UEL-promovem-curso-de-gestao-para-pr
 https://www.seti.pr.gov.br/Noticia/Estado-e-UEPG-confirmam-abertura-de-22-novos-leitos-clinicos-para-Ponta-Grossa
 https://www.seti.pr.gov.br/Noticia/Estado-e-UTFPR-firmam-parceria-para-fortalecer-o-ecossistema-de-inovacao
 https://www.seti.pr.gov.br/Noticia/Estado-e-comunidade-cientifica-promovem-semana-de-discussoes-sobre-redes-de-pesquisa
+https://www.seti.pr.gov.br/Noticia/Estado-e-finalista-em-premiacao-nacional-de-jornalismo-e-inovacao-digital
 https://www.seti.pr.gov.br/Noticia/Estado-e-prefeitura-de-Curitiba-estudam-parceria-para-restaurar-predio-historico-da-Unespar
 https://www.seti.pr.gov.br/Noticia/Estado-e-prefeituras-da-Grande-Curitiba-se-unem-para-criar-plano-unico-de-acao-contra
 https://www.seti.pr.gov.br/Noticia/Estado-e-universidades-estaduais-debatem-estrategias-para-formacao-de-professores
